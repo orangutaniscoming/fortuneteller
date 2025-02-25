@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>運勢占卜器</title>
+    
+    <!-- Open Graph meta tags for better link previews -->
+    <meta property="og:title" content="運勢占卜器">
+    <meta property="og:description" content="來測試你的運勢吧！">
+    <meta property="og:image" content="https://example.com/preview.jpg">
+    <meta property="og:url" content="https://yourgithubpage.com">
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -54,11 +61,12 @@
     <input type="text" id="username" placeholder="輸入暱稱...">
     <br>
     <button onclick="showResult()">測試</button>
-    <p id="result" class="rainbow-text">You are gay</p>
+    <p id="result" class="rainbow-text"></p>
     
     <script>
         function showResult() {
             let result = document.getElementById("result");
+            result.textContent = "You are gay";
             result.classList.add("show");
         }
     </script>
